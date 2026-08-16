@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chinook Theatre — Ticket Cost Calculator</title>
-  <!-- style sheet -->
-  <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinook Theatre - Home</title>
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="card">
-    <h1>🎟️ Chinook Theatre — Ticket Calculator</h1>
-    <p class="lead">Choose a ticket type and quantity to see your order total.</p>
+    <header>
+        <a href="index.html" class="flex logo">
+            <img src="images/logo.svg" alt="Chinook Theatre ticket logo">
+            <h1>Chinook Theatre</h1>
+        </a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/tickets.html">Tickets</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <label for="ticket-type">Ticket Type</label>
-    <select id="ticket-type">
-      <option value="25">General Admission — $25</option>
-      <option value="45" selected>Premium — $45</option>
-      <option value="75">VIP — $75</option>
-    </select>
+    <main class="index">
+        <div class="hero flex">
+            <section class="about-us">
+                <h2>Live theatre in the heart of the city</h2>
+                <p>The Chinook Theatre is a community playhouse bringing bold, affordable live
+                    performances to audiences of every age.</p>
+                <p>From weekend matinees to opening-night premieres, our stage hosts local drama,
+                    music, and comedy all season long. Choose the nights that work for you and build
+                    a booking that fits your budget.</p>
+                <p>New this season: pick any combination of show nights and see your total update
+                    instantly on our Tickets page.</p>
+            </section>
+            <img src="images/stage.svg" alt="Illustration of a theatre stage with red curtains and spotlights">
+        </div>
+        <div class="cta flex">
+            <a class="fake-button large-text" href="pages/tickets.html">Book Tickets</a>
+            <a class="fake-button large-text" href="pages/contact.html">Contact Us</a>
+        </div>
+    </main>
 
-    <label for="quantity">Number of Tickets</label>
-    <input type="number" id="quantity" value="1" min="1" step="1">
-
-    <button id="calculate-button">Calculate Total</button>
-
-    <div id="result"></div>
-
-    <p class="fine-print">Groups of 10 or more receive a 10% discount. A $2.50 booking fee applies per order.</p>
-  </div>
-
-  <!-- javascript -->
-  <script src="scripts/app.js"></script>
+    <footer>
+        <p>Chinook Theatre &mdash; 123 Prairie Ave, Calgary AB</p>
+        <p>Box office: (403) 555-0134 &middot; Open Wed&ndash;Sun</p>
+    </footer>
 </body>
+
 </html>
